@@ -47,6 +47,17 @@ namespace Catalog
                 }
 
                 dataGridView1.DataSource = books;
+
+                dataGridView1.Columns["Creator"].DisplayIndex = 0;
+                dataGridView1.Columns["Title"].DisplayIndex = 1;
+                dataGridView1.Columns["Genre"].DisplayIndex = 2;
+                dataGridView1.Columns["Length"].DisplayIndex = 3;
+                dataGridView1.Columns["PublishDate"].DisplayIndex = 4;
+
+                dataGridView1.Columns["Creator"].HeaderText = "Author";
+                dataGridView1.Columns["Length"].HeaderText = "Length (pages)";
+
+               
             }
             else if (catalog == "Records")
             {
@@ -64,6 +75,13 @@ namespace Catalog
                 }
 
                 dataGridView1.DataSource = records;
+                dataGridView1.Columns["Creator"].DisplayIndex = 0;
+                dataGridView1.Columns["Title"].DisplayIndex = 1;
+                dataGridView1.Columns["Genre"].DisplayIndex = 2;
+                dataGridView1.Columns["LengthMins"].DisplayIndex = 3;
+                dataGridView1.Columns["NumberOfSongs"].DisplayIndex = 4;
+                dataGridView1.Columns["Creator"].HeaderText = "Artist";
+                dataGridView1.Columns["LengthMins"].HeaderText = "Length (minutes)";
             }
             else if (catalog == "Movies")
             {
@@ -82,12 +100,35 @@ namespace Catalog
                 }
 
                 dataGridView1.DataSource = movies;
+                dataGridView1.Columns["Creator"].DisplayIndex = 0;
+                dataGridView1.Columns["Title"].DisplayIndex = 1;
+                dataGridView1.Columns["Genre"].DisplayIndex = 2;
+                dataGridView1.Columns["LengthHours"].DisplayIndex = 3;
+                dataGridView1.Columns["Languages"].DisplayIndex = 5;
+                dataGridView1.Columns["ReleaseDate"].DisplayIndex = 4;
+                dataGridView1.Columns["Creator"].HeaderText = "Director";
+                dataGridView1.Columns["LengthHours"].HeaderText = "Length (hours)";
+
             }
 
         }
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             ImportXML(comboBox1.Text);
+        }
+
+        private void SelectBtn_Click(object sender, EventArgs e)
+        {
+            //foreach (DataGridViewRow r in dataGridView1.SelectedRows)
+            //{
+            //    var item = new Item();
+            //    item.Creator = r.;
+            //    item.Price = decimal.Parse(r.Cells[3].Value.ToString());
+            //    item.Description = r.Cells[5].Value.ToString();
+
+            //    SelectedItems.Add(item);
+
+            //}
         }
     }
 }

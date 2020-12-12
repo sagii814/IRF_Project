@@ -66,6 +66,7 @@
             // 
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(13, 50);
             this.dataGridView1.Name = "dataGridView1";
@@ -76,6 +77,7 @@
             // 
             // dataGridView2
             // 
+            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Location = new System.Drawing.Point(16, 314);
             this.dataGridView2.Name = "dataGridView2";
@@ -92,6 +94,7 @@
             this.SelectBtn.TabIndex = 4;
             this.SelectBtn.Text = "Select item";
             this.SelectBtn.UseVisualStyleBackColor = true;
+            this.SelectBtn.Click += new System.EventHandler(this.SelectBtn_Click);
             // 
             // ExportBtn
             // 
