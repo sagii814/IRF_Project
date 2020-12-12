@@ -17,14 +17,16 @@ namespace Catalog
         List<Book> books = new List<Book>();
         List<Record> records = new List<Record>();
         List<Movie> movies = new List<Movie>();
-        List<Item> selectedItems = new List<Item>();
+        BindingList<Item> selectedItems = new BindingList<Item>();
 
 
         public Form1()
         {
             InitializeComponent();
 
+
             dataGridView2.DataSource = selectedItems;
+
         }
 
         public void ImportXML(string catalog)
@@ -119,16 +121,33 @@ namespace Catalog
 
         private void SelectBtn_Click(object sender, EventArgs e)
         {
-            //foreach (DataGridViewRow r in dataGridView1.SelectedRows)
-            //{
-            //    var item = new Item();
-            //    item.Creator = r.;
-            //    item.Price = decimal.Parse(r.Cells[3].Value.ToString());
-            //    item.Description = r.Cells[5].Value.ToString();
+            if (comboBox1.Text == "Movies")
+            {
+                foreach (DataGridViewRow r in dataGridView1.SelectedRows)
+                {
+                    var item = new Item();
+                    item.Creator = r.Cells[3].Value.ToString();
+                    item.Title = r.Cells[4].Value.ToString();
+                    item.Genre = r.Cells[5].Value.ToString();
 
-            //    SelectedItems.Add(item);
+                    selectedItems.Add(item);
+                }
 
-            //}
+            }
+            else
+            {
+                foreach (DataGridViewRow r in dataGridView1.SelectedRows)
+                {
+                    var item = new Item();
+                    item.Creator = r.Cells[2].Value.ToString();
+                    item.Title = r.Cells[3].Value.ToString();
+                    item.Genre = r.Cells[4].Value.ToString();
+
+                    selectedItems.Add(item);
+                }
+            }
+
+
         }
     }
 }

@@ -36,6 +36,7 @@
             this.ExportBtn = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
@@ -88,7 +89,7 @@
             // 
             // SelectBtn
             // 
-            this.SelectBtn.Location = new System.Drawing.Point(16, 264);
+            this.SelectBtn.Location = new System.Drawing.Point(370, 263);
             this.SelectBtn.Name = "SelectBtn";
             this.SelectBtn.Size = new System.Drawing.Size(110, 30);
             this.SelectBtn.TabIndex = 4;
@@ -121,11 +122,21 @@
             this.label2.TabIndex = 7;
             this.label2.Text = "Email:";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(12, 268);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(344, 20);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "To select an item click on the cell before the line";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 556);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.ExportBtn);
@@ -153,6 +164,7 @@
         private System.Windows.Forms.Button ExportBtn;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
 
