@@ -105,6 +105,7 @@
             this.ExportBtn.TabIndex = 5;
             this.ExportBtn.Text = "Export";
             this.ExportBtn.UseVisualStyleBackColor = true;
+            this.ExportBtn.Click += new System.EventHandler(this.ExportBtn_Click);
             // 
             // textBox1
             // 

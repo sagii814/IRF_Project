@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
@@ -147,6 +148,31 @@ namespace Catalog
                 }
             }
 
+
+        }
+
+        private void ExportBtn_Click(object sender, EventArgs e)
+        {
+            
+            if (ValidateEmail(textBox1.Text))
+            {
+                Export();
+            }
+            else
+            {
+                MessageBox.Show("Email invalid");
+            }
+        }
+
+        public bool ValidateEmail(string email)
+        {
+            return Regex.IsMatch(
+                email,
+                @"[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?");
+        }
+
+        public void Export()
+        {
 
         }
     }
