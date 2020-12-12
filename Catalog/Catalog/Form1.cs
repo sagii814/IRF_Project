@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -173,6 +174,32 @@ namespace Catalog
 
         public void Export()
         {
+            SaveFileDialog sfd = new SaveFileDialog();
+            if (sfd.ShowDialog() != DialogResult.OK) return;
+
+
+            using (StreamWriter sw = new StreamWriter(sfd.FileName+".csv", true, Encoding.UTF8))
+            {
+                sw.WriteLine("Your email: "+ textBox1.Text + ";");
+                sw.Write("Creator");
+                sw.Write(";");
+                sw.Write("Title");
+                sw.Write(";");
+                sw.Write("Genre");
+                sw.WriteLine(";");
+
+                foreach (Item item in selectedItems)
+                {
+                    sw.Write(item.Creator);
+                    sw.Write(";");
+                    sw.Write(item.Title);
+                    sw.Write(";");
+                    sw.Write(item.Genre);
+                    sw.WriteLine(";");
+
+                }
+
+            }
 
         }
     }
