@@ -8,7 +8,7 @@ namespace Catalog.Entities
 {
     class Record: Item
     {
-        public int Length { get; set; }
+        public int LengthMins { get; set; }
 
         public int NumberOfSongs { get; set; }
 
