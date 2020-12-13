@@ -23,7 +23,6 @@ namespace Catalog
 
         /*
         to do
-        email validation test
         graphics osztály
         selected items hogy ez most könyv cd vagy mi
         normális xml fileok
@@ -33,6 +32,9 @@ namespace Catalog
             InitializeComponent();
 
             dataGridView2.DataSource = selectedItems;
+
+            Design d = new Design();
+            panel1.Controls.Add(d);
         }
 
         public void ImportXML(string catalog)
@@ -206,5 +208,6 @@ namespace Catalog
             }
 
         }
+
     }
 }

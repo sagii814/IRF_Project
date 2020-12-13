@@ -37,6 +37,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
@@ -69,27 +70,29 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(13, 50);
+            this.dataGridView1.Location = new System.Drawing.Point(16, 46);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(775, 198);
+            this.dataGridView1.Size = new System.Drawing.Size(1021, 198);
             this.dataGridView1.TabIndex = 2;
             // 
             // dataGridView2
             // 
+            this.dataGridView2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(16, 314);
+            this.dataGridView2.Location = new System.Drawing.Point(16, 317);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 62;
             this.dataGridView2.RowTemplate.Height = 28;
-            this.dataGridView2.Size = new System.Drawing.Size(772, 191);
+            this.dataGridView2.Size = new System.Drawing.Size(784, 191);
             this.dataGridView2.TabIndex = 3;
             // 
             // SelectBtn
             // 
-            this.SelectBtn.Location = new System.Drawing.Point(370, 263);
+            this.SelectBtn.Location = new System.Drawing.Point(370, 268);
             this.SelectBtn.Name = "SelectBtn";
             this.SelectBtn.Size = new System.Drawing.Size(110, 30);
             this.SelectBtn.TabIndex = 4;
@@ -126,17 +129,25 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 268);
+            this.label3.Location = new System.Drawing.Point(12, 273);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(344, 20);
             this.label3.TabIndex = 8;
             this.label3.Text = "To select an item click on the cell before the line";
             // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(819, 317);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(218, 191);
+            this.panel1.TabIndex = 9;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 556);
+            this.ClientSize = new System.Drawing.Size(1049, 556);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox1);
@@ -166,6 +177,7 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 
