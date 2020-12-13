@@ -38,6 +38,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
@@ -49,7 +50,7 @@
             "Books",
             "Records",
             "Movies"});
-            this.comboBox1.Location = new System.Drawing.Point(185, 10);
+            this.comboBox1.Location = new System.Drawing.Point(15, 102);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 28);
             this.comboBox1.TabIndex = 0;
@@ -58,7 +59,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(65, 10);
+            this.label1.Location = new System.Drawing.Point(15, 70);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(114, 20);
             this.label1.TabIndex = 1;
@@ -70,29 +71,29 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(16, 70);
+            this.dataGridView1.Location = new System.Drawing.Point(142, 70);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(1021, 225);
+            this.dataGridView1.Size = new System.Drawing.Size(895, 225);
             this.dataGridView1.TabIndex = 2;
             // 
             // dataGridView2
             // 
-            this.dataGridView2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(16, 353);
+            this.dataGridView2.Location = new System.Drawing.Point(12, 334);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 62;
             this.dataGridView2.RowTemplate.Height = 28;
-            this.dataGridView2.Size = new System.Drawing.Size(751, 191);
+            this.dataGridView2.Size = new System.Drawing.Size(751, 144);
             this.dataGridView2.TabIndex = 3;
             // 
             // SelectBtn
             // 
-            this.SelectBtn.Location = new System.Drawing.Point(376, 311);
+            this.SelectBtn.Location = new System.Drawing.Point(19, 265);
             this.SelectBtn.Name = "SelectBtn";
             this.SelectBtn.Size = new System.Drawing.Size(110, 30);
             this.SelectBtn.TabIndex = 4;
@@ -102,7 +103,7 @@
             // 
             // ExportBtn
             // 
-            this.ExportBtn.Location = new System.Drawing.Point(939, 514);
+            this.ExportBtn.Location = new System.Drawing.Point(790, 408);
             this.ExportBtn.Name = "ExportBtn";
             this.ExportBtn.Size = new System.Drawing.Size(98, 30);
             this.ExportBtn.TabIndex = 5;
@@ -112,7 +113,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(790, 482);
+            this.textBox1.Location = new System.Drawing.Point(790, 376);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(247, 26);
             this.textBox1.TabIndex = 6;
@@ -120,7 +121,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(786, 459);
+            this.label2.Location = new System.Drawing.Point(786, 353);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(52, 20);
             this.label2.TabIndex = 7;
@@ -129,24 +130,35 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 321);
+            this.label3.Location = new System.Drawing.Point(15, 311);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(344, 20);
+            this.label3.Size = new System.Drawing.Size(382, 20);
             this.label3.TabIndex = 8;
-            this.label3.Text = "To select an item click on the cell before the line";
+            this.label3.Text = "* To select an item click on the small arrow in the first ";
             // 
             // panel1
             // 
-            this.panel1.Location = new System.Drawing.Point(12, 10);
+            this.panel1.Location = new System.Drawing.Point(340, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(47, 54);
+            this.panel1.Size = new System.Drawing.Size(45, 50);
             this.panel1.TabIndex = 9;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label4.Location = new System.Drawing.Point(15, 20);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(298, 29);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "Welcome to the Catalog!";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1049, 556);
+            this.ClientSize = new System.Drawing.Size(1049, 492);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -178,6 +190,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label4;
     }
 }
 
