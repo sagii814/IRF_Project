@@ -21,14 +21,18 @@ namespace Catalog
         List<Movie> movies = new List<Movie>();
         BindingList<Item> selectedItems = new BindingList<Item>();
 
-
+        /*
+        to do
+        email validation test
+        graphics osztály
+        selected items hogy ez most könyv cd vagy mi
+        normális xml fileok
+        */
         public Form1()
         {
             InitializeComponent();
 
-
             dataGridView2.DataSource = selectedItems;
-
         }
 
         public void ImportXML(string catalog)
