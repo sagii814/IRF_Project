@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -45,6 +46,8 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.BackColor = System.Drawing.Color.White;
+            this.comboBox1.ForeColor = System.Drawing.Color.Black;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "Books",
@@ -70,6 +73,7 @@
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(142, 70);
             this.dataGridView1.Name = "dataGridView1";
@@ -83,8 +87,9 @@
             this.dataGridView2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            this.dataGridView2.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(12, 334);
+            this.dataGridView2.Location = new System.Drawing.Point(15, 335);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 62;
             this.dataGridView2.RowTemplate.Height = 28;
@@ -93,35 +98,41 @@
             // 
             // SelectBtn
             // 
-            this.SelectBtn.Location = new System.Drawing.Point(19, 265);
+            this.SelectBtn.BackColor = System.Drawing.Color.White;
+            this.SelectBtn.ForeColor = System.Drawing.Color.Black;
+            this.SelectBtn.Location = new System.Drawing.Point(15, 250);
             this.SelectBtn.Name = "SelectBtn";
-            this.SelectBtn.Size = new System.Drawing.Size(110, 30);
+            this.SelectBtn.Size = new System.Drawing.Size(110, 50);
             this.SelectBtn.TabIndex = 4;
             this.SelectBtn.Text = "Select item";
-            this.SelectBtn.UseVisualStyleBackColor = true;
+            this.SelectBtn.UseVisualStyleBackColor = false;
             this.SelectBtn.Click += new System.EventHandler(this.SelectBtn_Click);
             // 
             // ExportBtn
             // 
+            this.ExportBtn.BackColor = System.Drawing.Color.White;
+            this.ExportBtn.ForeColor = System.Drawing.Color.Black;
             this.ExportBtn.Location = new System.Drawing.Point(790, 408);
             this.ExportBtn.Name = "ExportBtn";
-            this.ExportBtn.Size = new System.Drawing.Size(98, 30);
+            this.ExportBtn.Size = new System.Drawing.Size(100, 50);
             this.ExportBtn.TabIndex = 5;
             this.ExportBtn.Text = "Export";
-            this.ExportBtn.UseVisualStyleBackColor = true;
+            this.ExportBtn.UseVisualStyleBackColor = false;
             this.ExportBtn.Click += new System.EventHandler(this.ExportBtn_Click);
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(790, 376);
+            this.textBox1.BackColor = System.Drawing.Color.AliceBlue;
+            this.textBox1.ForeColor = System.Drawing.Color.Black;
+            this.textBox1.Location = new System.Drawing.Point(790, 365);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(247, 26);
+            this.textBox1.Size = new System.Drawing.Size(240, 26);
             this.textBox1.TabIndex = 6;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(786, 353);
+            this.label2.Location = new System.Drawing.Point(790, 340);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(52, 20);
             this.label2.TabIndex = 7;
@@ -132,12 +143,13 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(15, 311);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(382, 20);
+            this.label3.Size = new System.Drawing.Size(433, 20);
             this.label3.TabIndex = 8;
-            this.label3.Text = "* To select an item click on the small arrow in the first ";
+            this.label3.Text = "* To select an item click on the small arrow in the first column";
             // 
             // panel1
             // 
+            this.panel1.ForeColor = System.Drawing.Color.Black;
             this.panel1.Location = new System.Drawing.Point(340, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(45, 50);
@@ -146,7 +158,9 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(15, 20);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(298, 29);
@@ -157,6 +171,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1049, 492);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.panel1);
@@ -169,6 +184,8 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
+            this.ForeColor = System.Drawing.Color.Black;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Catalog";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

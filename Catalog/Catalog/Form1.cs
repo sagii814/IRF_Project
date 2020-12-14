@@ -104,7 +104,7 @@ namespace Catalog
                     movie.Creator = element.ChildNodes[0].InnerText;
                     movie.Title = element.ChildNodes[1].InnerText;
                     movie.Genre = element.ChildNodes[2].InnerText;
-                    movie.LengthHours = Int32.Parse(element.ChildNodes[3].InnerText);
+                    movie.LengthHours = decimal.Parse(element.ChildNodes[3].InnerText);
                     movie.Languages = element.ChildNodes[4].InnerText;
                     movie.ReleaseDate = DateTime.Parse(element.ChildNodes[5].InnerText);
                 }
