@@ -21,12 +21,6 @@ namespace Catalog
         List<Movie> movies = new List<Movie>();
         BindingList<Item> selectedItems = new BindingList<Item>();
 
-        /*
-        to do
-        graphics osztály
-        selected items hogy ez most könyv cd vagy mi
-        normális xml fileok
-        */
         public Form1()
         {
             InitializeComponent();
@@ -137,6 +131,7 @@ namespace Catalog
                     item.Creator = r.Cells[3].Value.ToString();
                     item.Title = r.Cells[4].Value.ToString();
                     item.Genre = r.Cells[5].Value.ToString();
+                    item.Catalog = comboBox1.Text;
 
                     selectedItems.Add(item);
                 }
@@ -150,6 +145,7 @@ namespace Catalog
                     item.Creator = r.Cells[2].Value.ToString();
                     item.Title = r.Cells[3].Value.ToString();
                     item.Genre = r.Cells[4].Value.ToString();
+                    item.Catalog = comboBox1.Text;
 
                     selectedItems.Add(item);
                 }
@@ -187,6 +183,8 @@ namespace Catalog
             using (StreamWriter sw = new StreamWriter(sfd.FileName+".csv", true, Encoding.UTF8))
             {
                 sw.WriteLine("Your email: "+ textBox1.Text + ";");
+                sw.Write(";");
+                sw.Write("Catalog");
                 sw.Write("Creator");
                 sw.Write(";");
                 sw.Write("Title");
@@ -196,6 +194,8 @@ namespace Catalog
 
                 foreach (Item item in selectedItems)
                 {
+                    sw.Write(item.Catalog);
+                    sw.Write(";");
                     sw.Write(item.Creator);
                     sw.Write(";");
                     sw.Write(item.Title);

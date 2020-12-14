@@ -9,11 +9,12 @@ using System.Windows.Forms;
 namespace Catalog.Entities
 {
     public class Item
-    {
+    {  
+        public string Catalog { get; set; }
         public string Creator { get; set; }
         public string Title { get; set; }
         public string Genre { get; set; }
-
+      
         public Item()
         {
         }
