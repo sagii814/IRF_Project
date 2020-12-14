@@ -183,8 +183,8 @@ namespace Catalog
             using (StreamWriter sw = new StreamWriter(sfd.FileName+".csv", true, Encoding.UTF8))
             {
                 sw.WriteLine("Your email: "+ textBox1.Text + ";");
-                sw.Write(";");
                 sw.Write("Catalog");
+                sw.Write(";");
                 sw.Write("Creator");
                 sw.Write(";");
                 sw.Write("Title");
