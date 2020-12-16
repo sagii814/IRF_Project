@@ -19,7 +19,6 @@ namespace UnitTestProject
         public void TestValidateEmail(string email, bool expectedResult)
         {
             // Arrange
-            //var accountController = new AccountController();
             var form1 = new Form1();
 
             // Act
